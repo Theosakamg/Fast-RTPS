@@ -76,7 +76,7 @@ endmacro()
 
 macro(add_gtest test)
     # Parse arguments
-    set(multiValueArgs SOURCES ENVIRONMENTS DEPENDENCIES)
+    set(multiValueArgs SOURCES ENVIRONMENTS)
     cmake_parse_arguments(GTEST "" "" "${multiValueArgs}" ${ARGN})
 
     if(GTEST_INDIVIDUAL)

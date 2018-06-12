@@ -52,7 +52,7 @@ if(NOT ((MSVC OR MSVC_IDE) AND EPROSIMA_INSTALLER))
             ${CMAKE_CURRENT_SOURCE_DIR}/BuiltinPKIDHTests.cpp)
         add_gtest(BuiltinPKIDH 
             ${CMAKE_CURRENT_SOURCE_DIR}/BuiltinPKIDHTests.cpp
-            ENVIRONMENT "CERTS_PATH=${PROJECT_SOURCE_DIR}/test/certs")
+            ENVIRONMENTS "CERTS_PATH=${PROJECT_SOURCE_DIR}/test/certs")
         target_compile_definitions(BuiltinPKIDH PRIVATE FASTRTPS_NO_LIB)
         target_include_directories(BuiltinPKIDH PRIVATE
             ${GTEST_INCLUDE_DIRS}
